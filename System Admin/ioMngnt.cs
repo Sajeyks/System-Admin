@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
-using System.IO;
-using System.Diagnostics;
 using System.Runtime.InteropServices;
-using System.Security;
-using System.IO.Ports;
 
 
 namespace System_Admin
@@ -134,7 +123,10 @@ namespace System_Admin
         //
         private void button2_Click(object sender, EventArgs e)
         {
-
+            radioButton1.Checked = false;
+            radioButton2.Checked = false;
+            radioButton3.Checked = false;
+            radioButton4.Checked = false;
         }
         bool isAdmin;
         [DllImport("shell32")]
